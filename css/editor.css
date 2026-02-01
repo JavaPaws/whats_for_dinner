@@ -1,0 +1,189 @@
+/* Editor page — Edit meals data */
+.editor-app {
+  max-width: 560px;
+}
+
+.editor-intro {
+  margin: 0.5rem 0 0;
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.editor-back {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.editor-back:hover {
+  text-decoration: underline;
+}
+
+.editor-section {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.editor-section h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+.editor-list {
+  margin-bottom: 0.75rem;
+}
+
+.editor-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.editor-row:last-child {
+  border-bottom: none;
+}
+
+.editor-row-id,
+.editor-row-label,
+.editor-row-name {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.editor-row-id {
+  font-family: ui-monospace, monospace;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.editor-btn {
+  margin-left: auto;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  min-height: 0;
+}
+
+.editor-btn-del {
+  color: #b53;
+}
+
+.editor-btn-del:hover {
+  color: #c00;
+}
+
+.btn-add {
+  margin-top: 0.25rem;
+}
+
+.editor-form {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.editor-form.hidden {
+  display: none;
+}
+
+.editor-form label {
+  display: block;
+  margin-bottom: 0.75rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.editor-form label input[type="text"] {
+  display: block;
+  width: 100%;
+  max-width: 20rem;
+  margin-top: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+.editor-form fieldset {
+  margin: 1rem 0;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+}
+
+.editor-form legend {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 0 0.25rem;
+}
+
+.editor-checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.editor-checkbox-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.editor-checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  cursor: pointer;
+}
+
+.editor-form-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.editor-output {
+  margin-top: 1.5rem;
+}
+
+.editor-output-hint {
+  margin: 0 0 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.editor-textarea {
+  display: block;
+  width: 100%;
+  min-height: 280px;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+  font-family: ui-monospace, monospace;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-bg);
+  resize: vertical;
+}
+
+.editor-textarea:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 1px;
+}
+
+.editor-output .btn {
+  margin-top: 0.25rem;
+}

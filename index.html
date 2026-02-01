@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What's for Dinner?</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>What's for Dinner?</h1>
+      <a href="editor.html" class="editor-link">Edit meals data</a>
+    </header>
+
+    <!-- Step: Options (meal type + protein on one screen) -->
+    <section id="step-options" class="step" data-step="options">
+      <h2>Type of meal</h2>
+      <div id="meal-type-options" class="options"></div>
+      <h2 class="option-group-label">Protein</h2>
+      <div id="protein-options" class="options"></div>
+      <div class="options-actions">
+        <button type="button" class="btn btn-secondary" id="btn-surprise-both">Surprise me</button>
+        <button type="button" class="btn btn-primary" id="btn-submit">Show matching meals</button>
+      </div>
+    </section>
+
+    <!-- Step: Choices -->
+    <section id="step-choices" class="step hidden" data-step="choices">
+      <h2>Matching meals</h2>
+      <div class="choices-toolbar">
+        <label class="checkbox-label">
+          <input type="checkbox" id="filter-favorites" />
+          <span>Favorites only</span>
+        </label>
+      </div>
+      <div id="meal-choices" class="meal-list"></div>
+      <button type="button" class="btn btn-primary" id="btn-pick-for-me">Pick for me</button>
+      <nav class="step-nav">
+        <button type="button" class="btn btn-text" id="btn-back-choices">Change type or protein</button>
+      </nav>
+    </section>
+
+    <!-- Step: Result -->
+    <section id="step-result" class="step hidden" data-step="result">
+      <h2>Tonight's pick</h2>
+      <p id="result-meal" class="result-meal"></p>
+      <nav class="step-nav">
+        <button type="button" class="btn btn-primary" id="btn-start-over">Start over</button>
+      </nav>
+    </section>
+  </main>
+
+  <script src="js/app.js?v=2"></script>
+</body>
+</html>

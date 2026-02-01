@@ -1,0 +1,317 @@
+{
+  "mealTypes": [
+    {
+      "id": "any",
+      "label": "Any"
+    },
+    {
+      "id": "quick",
+      "label": "Quick weeknight"
+    },
+    {
+      "id": "comfort",
+      "label": "Comfort food"
+    }
+  ],
+  "proteins": [
+    {
+      "id": "any",
+      "label": "Any"
+    },
+    {
+      "id": "chicken",
+      "label": "Chicken"
+    },
+    {
+      "id": "beef",
+      "label": "Beef"
+    },
+    {
+      "id": "pork",
+      "label": "Pork"
+    },
+    {
+      "id": "fish",
+      "label": "Fish"
+    },
+    {
+      "id": "vegetarian",
+      "label": "Vegetarian / beans"
+    }
+  ],
+  "meals": [
+    {
+      "name": "Chicken with rice",
+      "mealTypes": [
+        "quick"
+      ],
+      "proteins": [
+        "chicken"
+      ],
+      "favorite": true
+    },
+    {
+      "name": "Chicken stir-fry",
+      "mealTypes": [
+        "quick"
+      ],
+      "proteins": [
+        "chicken"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Beef tacos",
+      "mealTypes": [
+        "quick",
+        "comfort"
+      ],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": true
+    },
+    {
+      "name": "Spaghetti and meatballs",
+      "mealTypes": [
+        "comfort"
+      ],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": true
+    },
+    {
+      "name": "Beef stew",
+      "mealTypes": [
+        "comfort"
+      ],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Chicken Parm",
+      "mealTypes": [],
+      "proteins": [
+        "chicken"
+      ],
+      "favorite": true
+    },
+    {
+      "name": "Philly Cheesesteak",
+      "mealTypes": [
+        "quick",
+        "comfort"
+      ],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": true
+    },
+    {
+      "name": "Prime Rib",
+      "mealTypes": [],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Filet Mignon",
+      "mealTypes": [],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": true
+    },
+    {
+      "name": "Garlic Butter Steak Bites",
+      "mealTypes": [],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "NY Strips/Ribeye",
+      "mealTypes": [],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "London Broil",
+      "mealTypes": [],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Short Ribs",
+      "mealTypes": [],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Cubed Steak",
+      "mealTypes": [],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Hamburgers",
+      "mealTypes": [
+        "comfort"
+      ],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": true
+    },
+    {
+      "name": "Hot Dogs",
+      "mealTypes": [
+        "quick",
+        "comfort"
+      ],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Meatloaf",
+      "mealTypes": [],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": true
+    },
+    {
+      "name": "Meatballs",
+      "mealTypes": [
+        "comfort"
+      ],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": true
+    },
+    {
+      "name": "Lasagna",
+      "mealTypes": [
+        "comfort"
+      ],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": true
+    },
+    {
+      "name": "Baked Zitti",
+      "mealTypes": [],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": true
+    },
+    {
+      "name": "Tacos",
+      "mealTypes": [],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": true
+    },
+    {
+      "name": "Quesadillas Chicken or Beef",
+      "mealTypes": [],
+      "proteins": [
+        "chicken",
+        "beef"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Chili",
+      "mealTypes": [],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Stuffed Cabbage",
+      "mealTypes": [],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Corned Beef and Cabbage",
+      "mealTypes": [],
+      "proteins": [
+        "beef"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Pesto Sausage Pasta",
+      "mealTypes": [],
+      "proteins": [
+        "chicken",
+        "pork"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Baby Back Ribs",
+      "mealTypes": [],
+      "proteins": [
+        "pork"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "BBQ Pulled Pork",
+      "mealTypes": [],
+      "proteins": [
+        "pork"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Pork Chops",
+      "mealTypes": [],
+      "proteins": [
+        "pork"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Carnitas",
+      "mealTypes": [],
+      "proteins": [
+        "pork"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Creamed Ham",
+      "mealTypes": [],
+      "proteins": [
+        "pork"
+      ],
+      "favorite": false
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit meals data — What's for Dinner</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+  <main class="app editor-app">
+    <header class="header">
+      <h1>Edit meals data</h1>
+      <p class="editor-intro">Add or modify meal types, proteins, and meals. When done, copy the JSON below and paste it into <code>data/meals.json</code>.</p>
+      <a href="index.html" class="editor-back">← Back to app</a>
+    </header>
+
+    <!-- Meal types -->
+    <section class="editor-section">
+      <h2>Meal types</h2>
+      <div id="meal-types-list" class="editor-list"></div>
+      <button type="button" class="btn btn-secondary btn-add" id="btn-add-meal-type">+ Add meal type</button>
+      <div id="meal-type-form" class="editor-form hidden">
+        <label>Id <input type="text" id="meal-type-id" placeholder="e.g. quick" /></label>
+        <label>Label <input type="text" id="meal-type-label" placeholder="e.g. Quick weeknight" /></label>
+        <div class="editor-form-actions">
+          <button type="button" class="btn btn-primary" id="btn-save-meal-type">Save</button>
+          <button type="button" class="btn btn-text" id="btn-cancel-meal-type">Cancel</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proteins -->
+    <section class="editor-section">
+      <h2>Proteins</h2>
+      <div id="proteins-list" class="editor-list"></div>
+      <button type="button" class="btn btn-secondary btn-add" id="btn-add-protein">+ Add protein</button>
+      <div id="protein-form" class="editor-form hidden">
+        <label>Id <input type="text" id="protein-id" placeholder="e.g. chicken" /></label>
+        <label>Label <input type="text" id="protein-label" placeholder="e.g. Chicken" /></label>
+        <div class="editor-form-actions">
+          <button type="button" class="btn btn-primary" id="btn-save-protein">Save</button>
+          <button type="button" class="btn btn-text" id="btn-cancel-protein">Cancel</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Meals -->
+    <section class="editor-section">
+      <h2>Meals</h2>
+      <div id="meals-list" class="editor-list"></div>
+      <button type="button" class="btn btn-secondary btn-add" id="btn-add-meal">+ Add meal</button>
+      <div id="meal-form" class="editor-form hidden">
+        <label>Name <input type="text" id="meal-name" placeholder="e.g. Grilled chicken with rice" /></label>
+        <fieldset class="editor-checkboxes">
+          <legend>Meal types</legend>
+          <div id="meal-form-meal-types"></div>
+        </fieldset>
+        <fieldset class="editor-checkboxes">
+          <legend>Proteins</legend>
+          <div id="meal-form-proteins"></div>
+        </fieldset>
+        <label class="editor-checkbox-label">
+          <input type="checkbox" id="meal-favorite" /> Favorite
+        </label>
+        <div class="editor-form-actions">
+          <button type="button" class="btn btn-primary" id="btn-save-meal">Save</button>
+          <button type="button" class="btn btn-text" id="btn-cancel-meal">Cancel</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Output JSON -->
+    <section class="editor-section editor-output">
+      <h2>Generated JSON</h2>
+      <p class="editor-output-hint">Copy the JSON below and paste it into <code>data/meals.json</code> to update the app.</p>
+      <textarea id="output-json" class="editor-textarea" readonly></textarea>
+      <button type="button" class="btn btn-primary" id="btn-copy-json">Copy to clipboard</button>
+    </section>
+  </main>
+
+  <script src="js/editor.js"></script>
+</body>
+</html>
