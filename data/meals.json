@@ -312,6 +312,206 @@
         "pork"
       ],
       "favorite": false
+    },
+    {
+      "name": "Skinny Chicken",
+      "mealTypes": [],
+      "proteins": [
+        "chicken"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Longhorn Parmesan Crusted Chicken",
+      "mealTypes": [],
+      "proteins": [
+        "chicken"
+      ],
+      "favorite": true
+    },
+    {
+      "name": "Lemon Garlic Chicken",
+      "mealTypes": [],
+      "proteins": [
+        "chicken"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Teriyaki Chicken",
+      "mealTypes": [],
+      "proteins": [
+        "chicken"
+      ],
+      "favorite": true
+    },
+    {
+      "name": "Marinated Chicken",
+      "mealTypes": [],
+      "proteins": [
+        "chicken"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Balsamic Chicken",
+      "mealTypes": [],
+      "proteins": [
+        "chicken"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "BBQ Chicken on Grill w/Pineapple",
+      "mealTypes": [],
+      "proteins": [
+        "chicken"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "BBQ Chicken Instant",
+      "mealTypes": [],
+      "proteins": [
+        "chicken"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "BBQ Pulled Chicken",
+      "mealTypes": [],
+      "proteins": [
+        "chicken"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Rotisserie Buffalo Chicken Dip",
+      "mealTypes": [],
+      "proteins": [
+        "chicken"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Chicken Wings",
+      "mealTypes": [],
+      "proteins": [
+        "chicken"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Potato Soup",
+      "mealTypes": [],
+      "proteins": [
+        "vegetarian"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Cheese Fondue",
+      "mealTypes": [],
+      "proteins": [
+        "vegetarian"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Roasted Tomatoes",
+      "mealTypes": [],
+      "proteins": [
+        "vegetarian"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Spaghetti Squash",
+      "mealTypes": [],
+      "proteins": [
+        "vegetarian"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Mahi Mahi",
+      "mealTypes": [],
+      "proteins": [
+        "fish"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Salmon",
+      "mealTypes": [],
+      "proteins": [
+        "fish"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Sea Bass",
+      "mealTypes": [],
+      "proteins": [
+        "fish"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Tuna",
+      "mealTypes": [],
+      "proteins": [
+        "fish"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Flounder",
+      "mealTypes": [],
+      "proteins": [
+        "fish"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Shrimp",
+      "mealTypes": [],
+      "proteins": [
+        "fish"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Scallops",
+      "mealTypes": [],
+      "proteins": [
+        "fish"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Lobster Tail",
+      "mealTypes": [],
+      "proteins": [
+        "fish"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Langostinos",
+      "mealTypes": [],
+      "proteins": [
+        "fish"
+      ],
+      "favorite": false
+    },
+    {
+      "name": "Crab Leggs",
+      "mealTypes": [],
+      "proteins": [
+        "fish"
+      ],
+      "favorite": false
     }
   ]
 }
