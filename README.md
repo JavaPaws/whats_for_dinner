@@ -47,6 +47,51 @@ When you're ready to use the app from a public URL:
 
 ---
 
+## Deploying to a local NAS (QNAP)
+
+You can copy the app to a QNAP NAS web share so it’s served from your local network. Use the included script after you’ve set the path.
+
+### How to find your NAS path (Mac)
+
+On macOS, when you connect to a network share it’s usually **SMB** and it gets **mounted** under `/Volumes/`. To find the path:
+
+1. **Connect to the share**
+   - In Finder: **Go → Connect to Server** (or press **Cmd + K**).
+   - Enter your QNAP address, e.g. `smb://192.168.1.100` or `smb://myqnap.local`, then choose the share that your web server uses (e.g. `web` or `Web`).
+   - Log in if prompted. The share will appear in the Finder sidebar and on the desktop if you have that option on.
+
+2. **See the mounted path**
+   - Open **Terminal** and run:
+     ```bash
+     ls /Volumes
+     ```
+   - You’ll see your Mac disk and any mounted shares. The NAS share will be listed by name (e.g. `web` or `QNAP`). The full path is:
+     ```bash
+     /Volumes/ShareName
+     ```
+   - If the web server is supposed to serve from a subfolder (e.g. `whats_for_dinner`), use that in the script (see below).
+
+3. **If the share isn’t in `/Volumes`**
+   - You’re probably opening the share in a different way (e.g. an app or a different URL). As long as you know the **folder path on your Mac** that corresponds to the NAS web folder, you can use that path in the script.
+
+### Using the deploy script
+
+1. Open `deploy-to-nas.sh` and set **NAS_PATH** at the top to your folder. Examples:
+   - `NAS_PATH="/Volumes/web/whats_for_dinner"` — share named `web`, app in subfolder `whats_for_dinner`.
+   - `NAS_PATH="/Volumes/QNAP/Web/whats_for_dinner"` — share named `QNAP`, then `Web/whats_for_dinner` inside it.
+
+2. Connect to the NAS share in Finder (so `/Volumes/...` exists).
+
+3. From the project root, run:
+   ```bash
+   ./deploy-to-nas.sh
+   ```
+   The script copies `index.html`, `editor.html`, `save-meals.php`, and the `css/`, `js/`, and `data/` folders to the NAS path. If **NAS_PATH** isn’t set or the folder isn’t found, the script will print instructions.
+
+**Saving from the editor on the NAS:** If the app is served from a server with PHP (e.g. your QNAP), the editor page includes a **Save to server** button. Click it after adding or editing meals to write `data/meals.json` directly on the server—no copy-paste needed. Ensure the web server user has write permission to the `data/` folder (and `data/meals.json`).
+
+---
+
 ## Changelog
 
 *New features and notable updates. Newest first.*

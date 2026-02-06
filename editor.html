@@ -73,9 +73,13 @@
     <!-- Output JSON -->
     <section class="editor-section editor-output">
       <h2>Generated JSON</h2>
-      <p class="editor-output-hint">Copy the JSON below and paste it into <code>data/meals.json</code> to update the app.</p>
+      <p class="editor-output-hint">Copy the JSON below and paste it into <code>data/meals.json</code> to update the app. If the app is running on a server with PHP (e.g. your NAS), you can save directly.</p>
       <textarea id="output-json" class="editor-textarea" readonly></textarea>
-      <button type="button" class="btn btn-primary" id="btn-copy-json">Copy to clipboard</button>
+      <div class="editor-output-actions">
+        <button type="button" class="btn btn-primary" id="btn-save-server">Save to server</button>
+        <button type="button" class="btn btn-secondary" id="btn-copy-json">Copy to clipboard</button>
+        <span id="save-server-status" class="editor-status" aria-live="polite"></span>
+      </div>
     </section>
   </main>
 

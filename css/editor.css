@@ -184,6 +184,23 @@
   outline-offset: 1px;
 }
 
+.editor-output-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
 .editor-output .btn {
-  margin-top: 0.25rem;
+  margin-top: 0;
+}
+
+.editor-status {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}
+
+.editor-status-error {
+  color: #b53;
 }

@@ -297,6 +297,56 @@
     return div.innerHTML;
   }
 
+  function getSaveMealsUrl() {
+    var base = window.location.href.replace(/\/[^/]*$/, '');
+    return base + '/save-meals.php';
+  }
+
+  function saveToServer() {
+    var payload = {
+      mealTypes: state.mealTypes,
+      proteins: state.proteins,
+      meals: state.meals
+    };
+    var statusEl = document.getElementById('save-server-status');
+    var btn = document.getElementById('btn-save-server');
+    function setStatus(msg, isError) {
+      if (statusEl) {
+        statusEl.textContent = msg;
+        statusEl.className = 'editor-status' + (isError ? ' editor-status-error' : '');
+      }
+    }
+    if (btn) btn.disabled = true;
+    setStatus('Saving…', false);
+    fetch(getSaveMealsUrl(), {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+      .then(function (res) {
+        return res.text().then(function (text) {
+          var body = null;
+          try { body = text ? JSON.parse(text) : null; } catch (e) {}
+          return { status: res.status, body: body };
+        });
+      })
+      .then(function (result) {
+        if (result.status >= 200 && result.status < 300 && result.body && result.body.ok) {
+          setStatus('Saved.', false);
+        } else {
+          var msg = (result.body && result.body.error) ? result.body.error : 'Save failed.';
+          if (result.status >= 500) msg = 'Server error. Check PHP or file permissions.';
+          setStatus(msg, true);
+        }
+      })
+      .catch(function (err) {
+        setStatus('Request failed. Is the app on a server with PHP?', true);
+      })
+      .finally(function () {
+        if (btn) btn.disabled = false;
+      });
+  }
+
   function copyJsonToClipboard() {
     var textarea = document.getElementById('output-json');
     if (!textarea) return;
@@ -331,6 +381,7 @@
     document.getElementById('btn-save-meal')?.addEventListener('click', saveMeal);
     document.getElementById('btn-cancel-meal')?.addEventListener('click', function () { showForm('meal-form', false); });
 
+    document.getElementById('btn-save-server')?.addEventListener('click', saveToServer);
     document.getElementById('btn-copy-json')?.addEventListener('click', copyJsonToClipboard);
   }
 
